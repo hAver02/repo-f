@@ -3,7 +3,7 @@
 import { techStack } from "@/data/about-me/techStack";
 import { useState, useEffect } from "react";
 
-const VISIBLE_ITEMS = 5;
+
 
 export default function TechCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

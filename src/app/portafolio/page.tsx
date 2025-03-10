@@ -14,7 +14,7 @@ export default function PortafolioPage(){
       proyectsToShow = projects
     }else{
 
-      proyectsToShow == projects.filter(pro => pro.category === typeProyect)
+      proyectsToShow = projects.filter(pro => pro.category === typeProyect)
     }
     return(
         <Layout>

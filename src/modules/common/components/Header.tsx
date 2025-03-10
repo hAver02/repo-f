@@ -28,12 +28,9 @@ function useLayout(pathname : string){
 export default function Header(){
     const pathname = usePathname()
     const {idproyecto} = useParams()
-    let name;
-    if(idproyecto){
-        name = projects.find(pr => pr.id ==idproyecto)?.name;
-    }else{
-        name = useLayout(pathname);
-    }
+    const linkName = useLayout(pathname);
+
+    const name = idproyecto ? projects.find(pr => pr.id ==idproyecto)?.name : linkName 
  
     return (
         <header className="flex justify-between">
