@@ -13,7 +13,7 @@ export default function BigProject({ project }: Props) {
   return (
     <div className="max-w-4xl mx-auto w-full p-4">
       <div className="flex flex-col gap-4">
-        {/* Imagen Principal */}
+
         <div className="w-full">
           <Image
             src={image}
@@ -24,7 +24,6 @@ export default function BigProject({ project }: Props) {
           />
         </div>
 
-        {/* Miniaturas */}
         <div className="grid grid-cols-4 md:grid-cols-6 gap-2 justify-center">
           {project.image.map((img) => (
             <Image
@@ -41,7 +40,7 @@ export default function BigProject({ project }: Props) {
           ))}
         </div>
 
-        {/* Botón con link a GitHub */}
+
         <div className="text-center mt-4">
           <a
             href={project.link}
@@ -54,7 +53,6 @@ export default function BigProject({ project }: Props) {
         </div>
       </div>
 
-      {/* Tecnologías */}
       {project.technologies.length > 0 && (
         <div className="mt-6">
           <h2 className="text-lg md:text-xl font-semibold text-white text-center">
@@ -64,7 +62,6 @@ export default function BigProject({ project }: Props) {
           {project.technologies.map((tech, index) => (
             <div key={index} className="">
 
-                {/* {React.cloneElement(tech.icon as React.ReactElement, { className: "w-8 h-8" })} */}
                 <div className="w-10 h-10 flex items-center justify-center text-3xl">{tech.icon}</div>
             </div>
         ))}

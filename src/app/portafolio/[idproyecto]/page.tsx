@@ -11,10 +11,10 @@ interface Props {
 
 export default async function ProyectoPage({params } : Props){
     
-    const { idproyecto } = await params;
+    const { idproyecto } = params;
     
     const project = projects.find(pr => pr.id == idproyecto);
-    if(!project) return
+    if(!project) return <div> Sin projecto </div>
     
     
     return (
