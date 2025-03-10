@@ -1,5 +1,5 @@
 import { Project } from "@/modules/common/types/project";
-import { FaNodeJs, FaReact, FaDocker, FaJava, FaCss3Alt, FaGithub } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaCss3Alt } from "react-icons/fa";
 import { SiPostgresql, SiNextdotjs, SiTailwindcss, SiSolidity, SiPrisma, SiMongodb, SiExpress, SiTypescript } from "react-icons/si";
 
 export const projects: Project[] = [

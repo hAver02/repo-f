@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { ReactNode } from "react";
 import Aside from "../components/aside.component";
-import Link from "next/link";
 import Header from "../components/Header";
 
 
