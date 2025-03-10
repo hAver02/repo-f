@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React, { ReactNode } from "react";
+
+import React from "react";
 import Aside from "../components/aside.component";
 import Header from "../components/Header";
 

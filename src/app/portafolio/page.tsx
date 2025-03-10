@@ -14,7 +14,7 @@ export default function PortafolioPage(){
       proyectsToShow = projects
     }else{
 
-      proyectsToShow == projects.filter(pro => pro.category == typeProyect)
+      proyectsToShow == projects.filter(pro => pro.category === typeProyect)
     }
     return(
         <Layout>
@@ -23,7 +23,7 @@ export default function PortafolioPage(){
             <HeaderPortafolio type={typeProyect} changeType={setTypeProyect} />
             <section className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
               {
-                proyectsToShow.length === 0 ? null : proyectsToShow.map(project => (
+                proyectsToShow.length === 0 ? <div> </div> : proyectsToShow.map(project => (
                   <ProjectPortafolio key={project.id} project={project} />
                 ))
               }
