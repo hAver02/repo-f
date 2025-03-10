@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { useParams, usePathname } from "next/navigation"
-import useLayout from "../hooks/useLayout"
 import { projects } from "@/data/portafolio/projects"
 interface Link {
     href : string,
@@ -17,6 +16,14 @@ const links : Link[] = [
 
 ]
 
+function useLayout(pathname : string){
+    if(pathname == '/') return 'About Me';
+    if(pathname == '/resume') return "Resume";
+    if(pathname == '/contact') return 'Contact';
+    if(pathname == '/portafolio') return "Portafolio"
+    if(pathname.includes('/portafolio')) return "Portafolio"
+    return "Blog";
+}
 
 export default function Header(){
     const pathname = usePathname()
