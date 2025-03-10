@@ -19,3 +19,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.tech-stack-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Se ajusta el ancho de cada imagen para que siempre se vean 5 */
+.carousel {
+  display: flex;
+  transition: transform 1s ease; /* Transición suave */
+}
+
+.carousel img {
+  width: 100%; /* Asegúrate de que las imágenes se ajusten al tamaño del contenedor */
+}
+
+.carousel .image-item {
+  width: 20%; /* Mostrar 5 imágenes a la vez (100% / 5 = 20%) */
+}
